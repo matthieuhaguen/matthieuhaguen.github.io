@@ -4,177 +4,423 @@
   <meta charset="UTF-8">
   <title>Matthieu Haguenauer – GenAI Product Manager</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Matthieu Haguenauer – GenAI Product Manager & AI Adoption Lead, bridging AI, data and climate risk.">
-  <style>
-    :root {
-      --bg: #0f172a;
-      --bg-soft: #020617;
-      --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.1);
-      --text: #e5e7eb;
-      --text-soft: #9ca3af;
-      --border: #1f2933;
-      --card-bg: #020617;
-      --chip-bg: #111827;
-      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
-    }
+  <meta name="description" content="Portfolio of Matthieu Haguenauer – GenAI Product Manager & AI Adoption Lead.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="nav-avatar" aria-hidden="true"></div>
+        <div>
+          <div class="nav-name">Matthieu Haguenauer</div>
+          <div class="nav-role">GenAI Product · AI Adoption</div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#about" class="active">Accueil · Home</a>
+          <a href="#experience">CV</a>
+          <a href="#talks">Talks</a>
+          <a href="#training">Formations</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="lang-switch">
+          <span>FR</span> · <span>EN</span>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+  <main>
+    <section class="content">
 
-    body {
-      margin: 0;
-      font-family: var(--font-main);
-      background: radial-gradient(circle at top left, #1e293b 0, #020617 45%, #000 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
+      <!-- LEFT COLUMN -->
+      <div>
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+        <!-- HERO / ABOUT -->
+        <section id="about" class="hero section">
+          <div class="section-title">
+            À propos <span class="en">· About</span>
+          </div>
 
-    /* Layout */
+          <h1 class="hero-name">Matthieu Haguenauer</h1>
+          <div class="hero-role">GenAI Product Manager & AI Adoption Lead</div>
 
-    .page {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+          <p class="hero-subtitle">
+            I design, deploy and scale GenAI solutions inside organisations — from internal assistant platforms
+            and agentic workflows to governance and company-wide enablement.
+          </p>
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(18px);
-      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.75), transparent);
-      border-bottom: 1px solid rgba(15, 23, 42, 0.8);
-    }
+          <div class="hero-tags">
+            <span class="tag"><strong>GenAI</strong> Product Management</span>
+            <span class="tag">LLM · RAG · AI Agents</span>
+            <span class="tag">Workflow & Process Redesign</span>
+            <span class="tag">AI Adoption & Governance</span>
+            <span class="tag">Climate & Industrial Risk (secondary)</span>
+          </div>
 
-    .nav {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0.75rem 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
+          <div class="hero-links">
+            <a class="primary" href="mailto:mathaguen@gmail.com">Contact me</a>
+            <a href="https://www.linkedin.com/in/matthieu-haguenauer/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <!-- Optional: GitHub profile -->
+            <!-- <a href="https://github.com/USERNAME" target="_blank" rel="noreferrer">GitHub</a> -->
+            <a href="#experience"><small>Scroll to experience ↓</small></a>
+          </div>
 
-    .nav-left {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
+          <blockquote>
+            I like to work where product, AI and operations intersect:
+            mapping real workflows, co-building assistants with teams, and turning GenAI from a demo into a reliable tool.
+            <span>— Product × GenAI · Enterprise adoption</span>
+          </blockquote>
+        </section>
 
-    .nav-avatar {
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 30% 0, #38bdf8, #0f172a);
-      border: 1px solid rgba(148, 163, 184, 0.6);
-    }
+        <!-- WHAT I DO -->
+        <section class="section">
+          <div class="section-title">
+            Ce que je fais <span class="en">· What I do</span>
+          </div>
+          <ul>
+            <li><strong>GenAI Product Strategy</strong> – identify high-ROI use cases, map workflows, and define AI roadmaps aligned with business priorities.</li>
+            <li><strong>LLM-powered Assistants & Agents</strong> – design and deploy assistants connected to knowledge bases, tools and APIs, with clear UX and evaluation loops.</li>
+            <li><strong>AI Adoption & Change Management</strong> – train teams, create champions communities, define governance and risk frameworks.</li>
+            <li><strong>Process Automation</strong> – redesign processes end-to-end with LLMs, RAG and orchestration tools (Make, n8n, internal platforms).</li>
+            <li><strong>Data & Evaluation for AI</strong> – structure knowledge, prompts and metrics so that assistants improve over time instead of degrading.</li>
+          </ul>
+        </section>
 
-    .nav-name {
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      font-size: 0.95rem;
-    }
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section">
+          <div class="section-title">
+            Expérience produit & IA <span class="en">· Product & AI experience</span>
+          </div>
 
-    .nav-role {
-      font-size: 0.8rem;
-      color: var(--text-soft);
-    }
+          <!-- BETCLIC -->
+          <div class="experience-item">
+            <div class="experience-header">GenAI Product Manager & AI Adoption Lead – Betclic</div>
+            <div class="experience-meta">2024 – 2025 · Paris, France</div>
+            <p>
+              I led Betclic’s company-wide GenAI initiative, combining product strategy, workflow redesign, assistant
+              delivery and AI governance across multiple departments (Finance, Legal, HR, Compliance, Marketing,
+              Customer Ops, Product Ops).
+            </p>
 
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      font-size: 0.8rem;
-    }
+            <div class="subsection-title">In production</div>
+            <ul>
+              <li>
+                <strong>Enterprise GenAI platform (“BOB”)</strong> – deployed to the whole company with
+                <strong>80% usage rate</strong> (14% DAU, 32% WAU) and more than
+                <strong>700 assistants created</strong> by teams.
+              </li>
+              <li>
+                <strong>Inovaxion program</strong> – 700+ people involved, 22 hands-on sessions
+                (60h of training), average rating <strong>4.52/5</strong> from 108 voters and
+                <strong>60 NPS</strong>.
+              </li>
+              <li>
+                <strong>Heroes community</strong> – 15 “GenAI Heroes” identified at the forefront of
+                team transformation, with a defined training path and workshop topics.
+              </li>
+              <li>
+                <strong>GenAI governance</strong> – AI policy drafted and presented to the CSE,
+                first operational governance committee launched, e-learning module in progress.
+              </li>
+              <li>
+                <strong>Finance – Invoice reading assistant</strong> – assistant for invoice reading
+                and information extraction, tested and used by corporate services.
+              </li>
+              <li>
+                <strong>Legal – Contract tools</strong> – new bet-type clause generator and a first
+                <strong>contract analyzer / comparator</strong> (V1) in production to support legal teams.
+              </li>
+              <li>
+                <strong>Compliance / DPO – Regulator email archiving</strong> – automation for regulator
+                email archiving, <strong>≈2h per week saved</strong> and fewer errors.
+              </li>
+              <li>
+                <strong>HR – Recruitment</strong> – profile screening summarizer,
+                <strong>≈25h per week saved</strong> for recruiters.
+              </li>
+              <li>
+                <strong>HR – People Management</strong> – assistants for performance reviews
+                (133 unique users for 284 feedbacks) and manager debrief preparation,
+                <strong>≈45h saved every year</strong>.
+              </li>
+            </ul>
 
-    .nav-links a {
-      padding: 0.35rem 0.7rem;
-      border-radius: 999px;
-      background-color: rgba(15, 23, 42, 0.8);
-      border: 1px solid transparent;
-      color: var(--text-soft);
-    }
+            <div class="subsection-title">Next</div>
+            <ul>
+              <li>
+                <strong>Legal – Negotiations summarizer & doctrine analysis</strong> – assistants to summarise
+                negotiations and analyse legal doctrine for faster decision-making.
+              </li>
+              <li>
+                <strong>Compliance / DPO – DPA analysis, compliance chatbot, mediation response, Legora</strong> –
+                suite of assistants for DPA analysis, expert-level Q&amp;A, mediation responses and legal analysis,
+                with an estimated <strong>2–5h per week saved</strong> per use case.
+              </li>
+              <li>
+                <strong>HR – Recruitment</strong> – automatic creation of newcomer JIRA tickets
+                (<strong>≈5h per month saved</strong>) and job offer creation assistants
+                (<strong>≈2h per month saved</strong>).
+              </li>
+              <li>
+                <strong>HR – People Management</strong> – quarterly objectives helper to assist managers and
+                employees in structuring performance conversations.
+              </li>
+              <li>
+                <strong>Marketing / Growth</strong> – co-pilot for budget and planning creation and
+                <strong>Growth expert assistant</strong> for performance steering.
+              </li>
+              <li>
+                <strong>Customer Operations</strong> – training module generation, conversation summariser and
+                rephrasing assistants, scoring helpers, and regulatory report generation.
+              </li>
+              <li>
+                <strong>Product ops & delivery flow</strong> – release note generation assistant to standardise
+                product communication.
+              </li>
+            </ul>
 
-    .nav-links a:hover,
-    .nav-links a.active {
-      border-color: var(--accent);
-      background-color: var(--accent-soft);
-      color: var(--accent);
-      text-decoration: none;
-    }
+            <div class="subsection-title">Under study</div>
+            <ul>
+              <li>
+                <strong>Finance – Knowledge & analytics assistants</strong> – Confluence chatbot for finance
+                knowledge, FP&amp;A assistant on Pigment, mailbox management for invoice delegation (P2P),
+                and Cleemy expenses control for anomaly detection.
+              </li>
+              <li>
+                <strong>Finance – To study</strong> – Snowflake prompt layer (after X3 data ingestion), exploration
+                of Kyriba AI for treasury, automated KPI checks, and an
+                <strong>invoice analytical coding</strong> assistant.
+              </li>
+              <li>
+                <strong>Marketing – Identified</strong> – assistants for weekly reporting, daily target forecast
+                and marketing cost control.
+              </li>
+              <li>
+                <strong>Customer Ops – Identified</strong> – identity verification assistant (V1) and
+                translation automation.
+              </li>
+              <li>
+                <strong>HR – Identified</strong> – web candidates screening assistant and SharePoint-based HR chatbot.
+              </li>
+              <li>
+                <strong>Legal – Identified</strong> – contract review assistant following Betclic standards,
+                promotional operations checker, and a global legal chatbot.
+              </li>
+              <li>
+                <strong>GenAI framework evolution</strong> – ongoing consolidation of the champions community,
+                enrichment of the training path, and continuous iteration on AI governance and best practices.
+              </li>
+            </ul>
+          </div>
 
-    main {
-      flex: 1;
-    }
+          <!-- RESILIENT -->
+          <div class="subsection-title">Entrepreneurship & Climate Risk AI</div>
 
-    .content {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 1.5rem 1.25rem 4rem;
-      display: grid;
-      grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.2fr);
-      gap: 2rem;
-    }
+          <div class="experience-item">
+            <div class="experience-header">Co-founder – Resilient (Agentic AI for climate risk)</div>
+            <div class="experience-meta">Oct. 2023 – Feb. 2025 · Paris, France</div>
+            <ul>
+              <li>Co-founded a SaaS platform dedicated to <strong>climate risk assessment for industrial sites</strong>.</li>
+              <li>Designed and implemented an <strong>agentic framework powered by LLMs &amp; RAG</strong> to analyse insurance reports, industrial data and climate hazards.</li>
+              <li>Worked with major industrial companies (e.g. <strong>FORVIA, Clayens, Hutchinson, Thales, Sanofi</strong>), securing several 5-figure pilots.</li>
+              <li>Led product discovery, roadmap and delivery using both code and low-code tools (Cursor, Git, Linear, Figma, Make, Bubble).</li>
+            </ul>
+          </div>
 
-    @media (max-width: 900px) {
-      .content {
-        grid-template-columns: minmax(0, 1fr);
-      }
-      header {
-        position: static;
-      }
-    }
+          <!-- OCTOLIS -->
+          <div class="subsection-title">Data & Product Management</div>
 
-    /* Left column */
+          <div class="experience-item">
+            <div class="experience-header">Data Product Manager – Octolis (now part of Brevo)</div>
+            <div class="experience-meta">Apr. 2022 – Sep. 2023 · Paris, France</div>
+            <ul>
+              <li>Built new features for a data management SaaS used by retail players such as <strong>KFC, A.P.C., Virgin</strong>:</li>
+              <li>• <strong>SQL scoring library</strong> · <strong>BI dashboards library</strong> · <strong>AI-based audience builder</strong>.</li>
+              <li>Designed clients’ data architectures, managed their databases and supported onboarding.</li>
+              <li>Contributed to continuous product improvement following <strong>CI/CD practices</strong>.</li>
+            </ul>
+          </div>
 
-    .section {
-      margin-bottom: 2.75rem;
-    }
+          <!-- ALTEN -->
+          <div class="experience-item">
+            <div class="experience-header">Project Manager – Alten (Consultant for Stellantis)</div>
+            <div class="experience-meta">Aug. 2021 – Feb. 2022 · Madrid, Spain</div>
+            <ul>
+              <li>Worked from the Stellantis factory in Madrid, managing project follow-up and KPIs.</li>
+              <li>Implemented <strong>Lean Management</strong> techniques and continuous process improvement.</li>
+              <li>Trained a dozen people on production management tools and agile methodologies.</li>
+            </ul>
+          </div>
 
-    .section-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
+          <!-- ACHIEVEMENTS -->
+          <div class="subsection-title">Achievements & Awards</div>
+          <ul>
+            <li><strong>Entrepreneurial prizes (2023–2024)</strong> – Winner: HEC Launchpad 2024, INSA Lyon Foundation Award. Finalist: VivaTech “Next Startupper Challenge”, Village Capital “Greentech Europe Award”, Polytechnique “Safran Gerondeau Prize”.</li>
+          </ul>
+        </section>
 
-    .section-title span.en {
-      color: var(--text-soft);
-      font-weight: 500;
-      font-size: 0.95em;
-    }
+        <!-- TALKS -->
+        <section id="talks" class="section">
+          <div class="section-title">
+            Talks & Conférences <span class="en">· Talks</span>
+          </div>
+          <p>
+            I regularly talk about GenAI agents, enterprise adoption and climate risks:
+            how to move from POCs to real impact in organisations.
+          </p>
+          <div class="experience-item">
+            <div class="experience-header">Google AI Camp – “Generative AI Agents for Businesses: Challenges and Limitations”</div>
+            <div class="experience-meta">2024 – 2025</div>
+            <ul>
+              <li>Led discussions with <strong>200+ industry professionals</strong> on where GenAI agents create value and where they fail in practice.</li>
+            </ul>
+          </div>
+        </section>
 
-    .section-title::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: radial-gradient(circle, var(--accent), #22c55e);
-      box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
-    }
+        <!-- TRAINING / TEACHING -->
+        <section id="training" class="section">
+          <div class="section-title">
+            Formations & Enseignement <span class="en">· Training & teaching</span>
+          </div>
+          <p>
+            I design and deliver trainings to help teams adopt AI tools and integrate climate risks into their strategy.
+          </p>
 
-    p {
-      margin: 0.1rem 0 0.75rem;
-      color: var(--text-soft);
-      font-size: 0.9rem;
-    }
+          <div class="experience-item">
+            <div class="experience-header">Trainer in Artificial Intelligence – Mister IA</div>
+            <div class="experience-meta">2024 – 2025</div>
+            <ul>
+              <li>Trained companies across multiple sectors on <strong>generative AI tools</strong> to boost productivity and work quality.</li>
+            </ul>
+          </div>
 
-    .hero {
-      margin-bottom: 2.5rem;
-    }
+          <div class="experience-item">
+            <div class="experience-header">Course Instructor – Regen School</div>
+            <div class="experience-meta">2024 – 2025</div>
+            <ul>
+              <li>Taught a Master’s-level course: <strong>“How Companies Can Integrate Climate Risks into Their Strategy”</strong>.</li>
+            </ul>
+          </div>
+        </section>
 
-    .hero-name {
+        <!-- EDUCATION -->
+        <section class="section">
+          <div class="section-title">
+            Études supérieures <span class="en">· Education</span>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">MSc · Data Science for Business – École Polytechnique & HEC Paris</div>
+            <div class="experience-meta">2021 – 2023 · Paris, France</div>
+            <ul>
+              <li>Joint program ranked <strong>#3 worldwide</strong> and <strong>#1 in Europe</strong> in QS Business Analytics 2023.</li>
+              <li>Strong foundations in <strong>machine learning, statistics and business</strong>, with corporate case studies (Owkin, BCG, Artefact, McKinsey, Capgemini, Qinten, Ekimetrics, Descartes Underwriting).</li>
+              <li>ML project: <strong>bike traffic prediction in Paris</strong>, ranked #2 out of 37 teams.</li>
+              <li>Capgemini Data Camp: business case solved using NLP tools and presented to clients.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">Engineering Degree (AI option) – Arts et Métiers</div>
+            <div class="experience-meta">2018 – 2021 · Lille, France</div>
+            <ul>
+              <li>Engineering curriculum in <strong>Physics, IT, Business Development, Mathematics and Risk Management</strong>.</li>
+              <li>M2 project: human-AI collaboration with Keras.</li>
+              <li>M1 project: speech recognition algorithm with TensorFlow.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- EXTRA -->
+        <section class="section">
+          <div class="section-title">
+            Au-delà du travail <span class="en">· Beyond work</span>
+          </div>
+          <ul>
+            <li><strong>Competitive tennis player</strong> (ranked 15/2).</li>
+            <li><strong>Climber</strong> and outdoor sports enthusiast.</li>
+            <li><strong>Music composer and performer</strong> with 10+ concerts.</li>
+            <li>Active member of an <strong>improvisation club</strong>.</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN: SIDEBAR -->
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Snapshot</h3>
+          <div class="card-section">
+            <p>
+              <strong>Based in:</strong> France<br>
+              <strong>Born:</strong> 20 March 2000<br>
+              <strong>Current focus:</strong> GenAI product, AI agents &amp; enterprise adoption.
+            </p>
+          </div>
+          <div class="card-section">
+            <h4>Languages</h4>
+            <div class="lang-list">
+              <span>French · native</span>
+              <span>English · fluent (TOEIC 930)</span>
+              <span>Spanish · C1 (6 months in Madrid)</span>
+            </div>
+          </div>
+          <div class="card-section">
+            <h4>Core topics</h4>
+            <div class="pill-list">
+              <span class="pill">GenAI product discovery</span>
+              <span class="pill">LLM &amp; RAG systems</span>
+              <span class="pill">AI agents &amp; workflows</span>
+              <span class="pill">AI adoption & change</span>
+              <span class="pill">Enterprise knowledge automation</span>
+              <span class="pill">Data products</span>
+              <span class="pill">Climate risk (industry)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="skills">
+          <h3>Technical skills</h3>
+          <div class="card-section">
+            <h4>Programming</h4>
+            <p>Python, SQL, R, Git, Matlab, JavaScript</p>
+          </div>
+          <div class="card-section">
+            <h4>ML &amp; AI</h4>
+            <p>Machine Learning, Deep Learning, LLMs, RAG, NLP, Reinforcement Learning, Diffusion models, MLOps.</p>
+          </div>
+          <div class="card-section">
+            <h4>Tools</h4>
+            <p>Dataiku, Tableau / Metabase, Docker, Airflow, Snowflake, GCP, AWS, Make / n8n, GitHub Copilot, Cursor, Notion, Confluence.</p>
+          </div>
+        </div>
+
+        <div class="card" id="contact">
+          <h3>Contact</h3>
+          <p>
+            I’m open to product roles, freelance missions and collaborations around GenAI, AI agents and AI education.
+          </p>
+          <p>
+            <strong>Email:</strong> <a href="mailto:mathaguen@gmail.com">mathaguen@gmail.com</a><br>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/matthieu-haguenauer/" target="_blank" rel="noreferrer">matthieu-haguenauer</a>
+          </p>
+        </div>
+      </aside>
+
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> · Matthieu Haguenauer</div>
+    <div>Portfolio Produit × GenAI · GitHub Pages</div>
+  </footer>
+</div>
+</body>
+</html>
