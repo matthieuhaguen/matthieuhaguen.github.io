@@ -1,319 +1,483 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Matthieu Haguenauer – Portfolio Produit × GenAI</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio de Matthieu Haguenauer – GenAI Product Manager & AI Adoption Lead.">
-  <!-- IMPORTANT : le nom du fichier doit être exactement styles.css -->
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <title>Matthieu Haguenauer – GenAI Product Manager & Deployment Specialist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Matthieu Haguenauer, GenAI Product Manager & Deployment Specialist. Deployment of LLM & RAG solutions, agentic workflows, and enterprise-wide GenAI adoption."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-<header class="site-header">
-  <nav class="top-nav">
-    <div class="top-nav-left">
-      <a href="#home" class="brand">Matthieu Haguenauer</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-mark">MH</span>
+        <span class="logo-text">Matthieu Haguenauer</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#deployment">Deployment</a>
+        <a href="#agentic">Agentic workflow</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#talks-awards">Talks & Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <ul class="top-nav-links">
-      <li><a href="#home" class="active">Accueil</a></li>
-      <li><a href="#cv">CV</a></li>
-      <li><a href="#talks">Talks</a></li>
-    </ul>
-    <div class="lang-switch">
-      <button class="lang-btn active">FR</button>
-      <button class="lang-btn">EN</button>
-    </div>
-  </nav>
-</header>
+  </header>
 
-<main class="page">
-  <div class="page-inner">
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">GenAI Product Manager &amp; Deployment Specialist</p>
+          <h1>I deploy GenAI products that teams actually use.</h1>
+          <p class="hero-subtitle">
+            I help map your teams’ workflows, design GenAI solutions to scale them, drive their
+            deployment across your organisation, and measure the impact on efficiency and business
+            outcomes.
+          </p>
 
-    <!-- ===== SECTION HOME (comme le hero de Félix) ===== -->
-    <section id="home" class="section section-home">
-      <div class="home-hero">
-        <!-- Colonne gauche : nom + rôle + photo -->
-        <div class="home-hero-left">
-          <h1 class="hero-name">Matthieu Haguenauer</h1>
-          <p class="hero-role">GenAI Product Manager &amp; AI Adoption Lead</p>
+          <div class="hero-meta">
+            <span class="meta-pill">Based in Paris, France (mobile if needed)</span>
+          </div>
 
-          <div class="hero-photo-card">
-            <!-- Remplace pictures/matthieu.jpg par ta vraie image -->
-            <div class="hero-photo">
-              <img src="pictures/matthieu.jpg" alt="Photo de Matthieu Haguenauer">
-            </div>
-            <p class="hero-photo-caption">Photo de Matthieu Haguenauer</p>
+          <div class="hero-cta">
+            <a href="mailto:mathaguen@gmail.com" class="btn primary">Email me</a>
+            <a
+              href="https://www.linkedin.com/in/matthieu-haguenauer/"
+              target="_blank"
+              rel="noreferrer"
+              class="btn secondary"
+              >View LinkedIn</a
+            >
+            <a href="assets/Matthieu-Haguenauer-CV.pdf" class="btn ghost" target="_blank"
+              >Download CV</a
+            >
           </div>
         </div>
 
-        <!-- Colonne droite : carte "Ce que je fais" -->
-        <aside class="what-card">
-          <h2 class="what-title">Ce que je fais</h2>
-          <ul class="bullet-list">
-            <li>
-              <strong>GenAI Product Management</strong> : de la Discovery à la Delivery, en définissant une vision,
-              une roadmap et des critères de succès pour les assistants IA.
-            </li>
-            <li>
-              <strong>LLM &amp; Agents</strong> : conception d’assistants connectés aux bases de connaissance,
-              aux outils métiers et aux APIs, avec des workflows orchestrés.
-            </li>
-            <li>
-              <strong>AI Adoption &amp; Gouvernance</strong> : structurer les politiques d’usage, les garde-fous,
-              les communautés de champions et les formations internes.
-            </li>
-            <li>
-              <strong>Process &amp; automation</strong> : cartographier les processus existants et les réinventer
-              avec l’IA (RAG, agents, automatisations low-code).
-            </li>
-          </ul>
-        </aside>
+        <div class="hero-photo">
+          <!-- Replace with your actual photo path -->
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Matthieu Haguenauer" />
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Cartes en dessous du hero : Mon profil + Mon adage -->
-      <div class="home-bottom-grid">
-        <section class="card-block">
-          <h2 class="section-title">Mon profil professionnel</h2>
-          <ul class="bullet-list">
-            <li>
-              <strong>GenAI Product Manager</strong> : concevoir et déployer des assistants IA et des workflows agentiques
-              pour améliorer concrètement les processus métiers.
-            </li>
-            <li>
-              <strong>AI Adoption Lead</strong> : accompagner les équipes (Finance, Legal, HR, Ops, Produit, Marketing…)
-              dans l’identification des cas d’usage, la mise en place d’assistants et la conduite du changement.
-            </li>
-            <li>
-              <strong>Entrepreneur</strong> : co-fondateur de Resilient, une plateforme SaaS qui quantifie l’impact
-              des risques climatiques sur les sites industriels, en s’appuyant sur des agents IA.
-            </li>
-            <li>
-              <strong>Formateur &amp; enseignant</strong> : former les équipes aux outils d’IA générative et
-              enseigner l’adaptation des entreprises au changement climatique.
-            </li>
-          </ul>
-        </section>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>About me</h2>
+          <p>GenAI at the intersection of Product, Engineering and Business.</p>
+        </div>
 
-        <section class="card-block">
-          <h2 class="section-title">Mon adage</h2>
-          <blockquote>
-            Seul on va plus vite, ensemble on va plus loin.
-          </blockquote>
-          <p class="paragraph">
-            Je crois que la meilleure façon de conduire un projet d’équipe est d’impliquer chaque personne
-            dans les décisions et de lui donner de l’autonomie sur son périmètre.
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a GenAI Product Manager &amp; Deployment Specialist with more than four years of
+              experience helping organisations translate their business workflows into operational
+              GenAI products. I work with both technical and business stakeholders to ensure that AI
+              initiatives are not only well-designed but successfully adopted at scale.
+            </p>
+            <p>
+              Most recently, I led GenAI deployment across a 1600-employee European company,
+              onboarding every department onto an internal LLM + RAG platform, redesigning over 50
+              workflows, and scaling usage to strong daily adoption. Before that, I co-founded
+              <strong>Resilient</strong>, where I built an agentic framework powered by LLMs and RAG
+              to quantify climate risks for major industrial groups. I hold a double master’s degree
+              from École Polytechnique and HEC Paris in
+              <strong>Data Science for Business</strong>.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <h3>What I bring</h3>
+            <ul>
+              <li>Turning business processes into scalable GenAI products</li>
+              <li>Deploying LLM/RAG solutions across teams and ensuring adoption</li>
+              <li>Measuring impact and continuously improving value delivery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GENAI DEPLOYMENT -->
+    <section id="deployment" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>GenAI deployment in a 1600-employee company</h2>
+          <p>Enterprise-wide adoption of an internal LLM + RAG platform.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">AI assistants created</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">1600</span>
+            <span class="stat-label">employees onboarded</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">80%</span>
+            <span class="stat-label">usage rate (14% DAU / 32% WAU)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">up to 40%</span>
+            <span class="stat-label">efficiency gains per department</span>
+          </div>
+        </div>
+
+        <p class="deployment-intro">
+          Over nine months, I led the design, deployment, and adoption of an internal GenAI
+          platform for a large European company with 1600 employees. The goal: identify
+          high-value workflows across all teams, build assistants tailored to their processes, and
+          integrate GenAI into daily operations.
+        </p>
+
+        <div class="dept-grid">
+          <!-- Marketing -->
+          <article class="dept-card">
+            <h3>Marketing</h3>
+            <ul>
+              <li>Budget &amp; planning assistant</li>
+              <li>Weekly reporting generator for marketing KPIs</li>
+              <li>Cost control assistant for spend monitoring</li>
+              <li>Growth expert assistant supporting forecasting and analysis</li>
+            </ul>
+            <p class="impact-text">→ Up to 30% time saved on weekly reporting</p>
+          </article>
+
+          <!-- Corporate Services / Finance -->
+          <article class="dept-card">
+            <h3>Corporate Services &amp; Finance</h3>
+            <ul>
+              <li>Invoice reading assistant for automated extraction &amp; coding</li>
+              <li>AI assistant for contextual metric analysis in FP&amp;A</li>
+              <li>Mailbox management assistant for invoice delegation &amp; triage</li>
+              <li>Cleemy expenses checker to flag inconsistent expenses</li>
+            </ul>
+            <p class="impact-text">→ Up to 5 hours saved per week for finance analysts</p>
+          </article>
+
+          <!-- Legal -->
+          <article class="dept-card">
+            <h3>Legal</h3>
+            <ul>
+              <li>Contract clause generator for new bet-type clauses</li>
+              <li>Contract analyzer &amp; comparator (V1) for internal use</li>
+              <li>Negotiation summarizer highlighting key risks and positions</li>
+              <li>Doctrine analysis assistant for legal research</li>
+            </ul>
+            <p class="impact-text">→ 3–5 hours saved weekly on standard contract reviews</p>
+          </article>
+
+          <!-- Human Resources -->
+          <article class="dept-card">
+            <h3>Human Resources</h3>
+            <ul>
+              <li>Candidate profile summarizer for CV screening</li>
+              <li>Newcomer ticket creation assistant for onboarding workflows</li>
+              <li>Job offer creation assistant</li>
+              <li>Performance review helper for structuring feedback</li>
+            </ul>
+            <p class="impact-text">→ 25 hours saved per week on candidate analysis</p>
+          </article>
+
+          <!-- Customer Operations -->
+          <article class="dept-card">
+            <h3>Customer Operations</h3>
+            <ul>
+              <li>Training module generator for internal learning content</li>
+              <li>Rephrasing &amp; communication assistants for support agents</li>
+              <li>Regulatory report assistant for compliance summaries</li>
+            </ul>
+            <p class="impact-text">→ Reduced manual writing workload by more than 35%</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENTIC WORKFLOW -->
+    <section id="agentic" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>The agentic workflow I built for Resilient</h2>
+          <p>Quantifying climate risks on industrial sites with 100+ specialised LLM agents.</p>
+        </div>
+
+        <div class="agentic-grid">
+          <div class="agentic-text">
+            <h3>Context</h3>
+            <p>
+              I co-founded Resilient, a SaaS platform helping industrial companies assess and
+              quantify climate-related risks on their facilities. Our clients included major groups
+              such as <strong>Thales, Safran, FORVIA, Clayens, and Hutchinson</strong>.
+            </p>
+            <p>
+              Industrial sites are increasingly exposed to climate hazards like floods, heatwaves,
+              hail, and storms. Risk managers needed a scalable way to identify vulnerabilities,
+              estimate potential production shutdown costs, and prioritise adaptation investments.
+            </p>
+
+            <h3>What I built</h3>
+            <p>
+              I designed and implemented an agentic GenAI workflow combining RAG, variable
+              extraction, and quantification models to evaluate the impact of climate hazards at
+              scale. The system is powered by
+              <strong>100+ specialised LLM agents</strong>.
+            </p>
+            <ul>
+              <li>Processing hundreds of pages of insurance reports and climate audits</li>
+              <li>
+                Extracting 100+ variables required for our simulation models from raw documents
+              </li>
+              <li>Feeding a quantitative model estimating physical damages and business interruption</li>
+            </ul>
+
+            <h3>Tech stack</h3>
+            <ul class="pill-list">
+              <li>Python</li>
+              <li>Streamlit</li>
+              <li>Docker</li>
+              <li>OpenAI / Mistral / Anthropic</li>
+              <li>LangChain</li>
+            </ul>
+
+            <h3>Impact</h3>
+            <p>
+              We ran <strong>9 POCs</strong> with major industrial groups, identifying critical
+              risks such as potential production shutdowns of more than one month—representing
+              <strong>tens of millions of euros in avoided losses per site</strong>. The workflow
+              reduced analysis time and cost for risk managers by a factor of
+              <strong>five</strong>, enabling site-level adaptation planning at scale.
+            </p>
+          </div>
+
+          <div class="agentic-visual">
+            <!-- Replace with your actual diagram / screenshot -->
+            <div class="mockup-card">
+              <img
+                src="assets/resilient-pipeline.png"
+                alt="Diagram of Resilient's RAG and quantification model workflow"
+              />
+              <p class="mockup-caption">
+                High-level view of the RAG and quantification pipeline used to estimate physical
+                damages and business interruption for climate hazards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTHER PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Other coding projects</h2>
+          <p>Selected work in ML, NLP and applied AI.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="project-card">
+            <h3>Octolis — AI Audience Builder &amp; Scoring Library</h3>
+            <p>
+              Built classification, clustering, and time-series scoring features powering retail
+              customer segmentation for clients such as KFC, A.P.C. and Virgin.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Velib — Bike Dock Availability Prediction</h3>
+            <p>
+              Predicted bicycle availability across Paris using ML models. Ranked
+              <strong>#2 / 37</strong> in an École Polytechnique machine learning competition.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Capgemini — NLP Customer Satisfaction Analysis</h3>
+            <p>
+              Scraped and analysed thousands of customer reviews using BERT and DistilBERT to
+              generate actionable insights presented to Capgemini clients.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>LISPEN Lab — Human–Robot Collaboration with Deep Learning</h3>
+            <p>
+              Developed a vision-based model enabling a robot to detect objects on a production line
+              and hand them safely to human operators.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>From LLM architectures to product delivery and enterprise deployment.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-column">
+            <h3>GenAI &amp; Data</h3>
+            <ul>
+              <li>LLMs &amp; Prompt Engineering</li>
+              <li>Agentic workflows &amp; RAG</li>
+              <li>ML &amp; classical modeling</li>
+              <li>Data modeling &amp; SQL</li>
+              <li>GenAI evaluation &amp; monitoring</li>
+            </ul>
+          </div>
+
+          <div class="skill-column">
+            <h3>Product &amp; Delivery</h3>
+            <ul>
+              <li>Product discovery &amp; scoping</li>
+              <li>Mapping business processes into requirements</li>
+              <li>Roadmapping &amp; prioritisation</li>
+              <li>Stakeholder management (C-level to ops)</li>
+              <li>Change management &amp; adoption</li>
+              <li>KPI definition &amp; impact tracking</li>
+            </ul>
+          </div>
+
+          <div class="skill-column">
+            <h3>Tools &amp; Stack</h3>
+            <ul>
+              <li>Python, SQL, JavaScript</li>
+              <li>Docker, Git, Streamlit</li>
+              <li>Bubble, Make, n8n, Webflow, Softr</li>
+              <li>Snowflake, GCP, AWS</li>
+              <li>Tableau, Metabase, Power BI</li>
+              <li>LangChain &amp; agent frameworks</li>
+              <li>Cursor, GitHub Copilot</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TALKS & AWARDS -->
+    <section id="talks-awards" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Talks &amp; teaching • Awards</h2>
+        </div>
+
+        <div class="two-column-grid">
+          <div>
+            <h3>Talks &amp; teaching</h3>
+            <ul class="timeline">
+              <li>
+                <h4>Google AI Camp (2025)</h4>
+                <p>
+                  Talk: <em>“Generative AI Agents for Businesses: Challenges and Limitations”</em>
+                  – 200 attendees.
+                </p>
+              </li>
+              <li>
+                <h4>Mister IA (2025)</h4>
+                <p>
+                  GenAI corporate trainings &amp; automations for five companies, covering use
+                  cases, workflow design and value measurement.
+                </p>
+              </li>
+              <li>
+                <h4>Regen School (2024)</h4>
+                <p>
+                  Course: <em>“How companies integrate climate risks into their strategy”</em> for
+                  50 Master’s students.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Awards</h3>
+            <ul class="timeline">
+              <li>
+                <h4>Winner – HEC Launchpad 2024</h4>
+                <p>Entrepreneurship programme for high-potential startups.</p>
+              </li>
+              <li>
+                <h4>Winner – INSA Lyon Foundation Award</h4>
+                <p>Recognition for innovative work at the intersection of tech and impact.</p>
+              </li>
+              <li>
+                <h4>Finalist – Vivatech “Next Startupper Challenge”</h4>
+              </li>
+              <li>
+                <h4>Finalist – Village Capital “Greentech Europe Award”</h4>
+              </li>
+              <li>
+                <h4>Finalist – Polytechnique “Safran Gerondeau Prize”</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Interested in deploying GenAI within your organisation? Let’s talk.</p>
+        </div>
+
+        <div class="contact-card">
+          <p>
+            Email:
+            <a href="mailto:mathaguen@gmail.com">mathaguen@gmail.com</a>
           </p>
-        </section>
-      </div>
-    </section>
-
-    <!-- ===== SECTION CV ===== -->
-    <section id="cv" class="section section-cv">
-      <h2 class="section-title section-title-center">CV</h2>
-      <p class="cv-intro">
-        Expériences produit, IA et data, enseignement et études regroupés par thématique.
-      </p>
-      <p class="cv-intro">
-        Profil international : 6 mois à Madrid (Espagne) dans une usine Stellantis.
-      </p>
-      <p class="cv-intro">
-        Bilingue : français &amp; anglais. Espagnol C1.
-      </p>
-
-      <div class="cv-grid">
-        <!-- Colonne gauche : expériences produit & IA -->
-        <div class="cv-column">
-          <h3 class="section-subtitle">Expériences produit &amp; IA</h3>
-
-          <!-- Betclic -->
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h4 class="experience-title">Betclic</h4>
-                <p class="experience-role">GenAI Product Manager &amp; AI Adoption Lead</p>
-                <p class="experience-meta">Betclic Group · 2024 – 2025 · Paris</p>
-              </div>
-            </div>
-            <p class="paragraph">
-              Pilotage de l’initiative GenAI à l’échelle de l’entreprise : plateforme LLM interne, assistants,
-              automatisations et gouvernance, en lien avec les équipes Finance, Legal, HR, Ops, Produit, Marketing et Growth.
-            </p>
-            <ul class="bullet-list">
-              <li>Plateforme GenAI interne (LLM + RAG) : 80&nbsp;% d’utilisateurs, 14&nbsp;% DAU, 32&nbsp;% WAU, 700+ assistants créés.</li>
-              <li>Programme Inovaxion : 700+ personnes formées, 22 sessions (60h), 4,52/5 de satisfaction, NPS 60.</li>
-              <li>Co-construction d’assistants avec les équipes métiers à partir de la cartographie détaillée des processus.</li>
-              <li>Mise en place d’une gouvernance IA : politique d’usage, comité dédié, 15 “GenAI Heroes”, formations structurées.</li>
-            </ul>
-          </article>
-
-          <!-- Resilient -->
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h4 class="experience-title">Resilient</h4>
-                <p class="experience-role">Co-fondateur · Agentic AI pour les risques climatiques</p>
-                <p class="experience-meta">Oct. 2023 – Feb. 2025 · Paris</p>
-              </div>
-            </div>
-            <p class="paragraph">
-              Co-fondateur d’une plateforme SaaS qui évalue l’impact des aléas climatiques sur les sites industriels
-              en s’appuyant sur des agents LLM et des pipelines de données.
-            </p>
-            <ul class="bullet-list">
-              <li>Framework agentique (LLM + RAG) analysant rapports d’assurance et données industrielles pour produire des indicateurs de vulnérabilité.</li>
-              <li>Collaboration avec FORVIA, Clayens, Hutchinson, Thales, Sanofi… avec plusieurs pilotes à cinq chiffres.</li>
-            </ul>
-          </article>
-
-          <!-- Octolis -->
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h4 class="experience-title">Octolis (part of Brevo)</h4>
-                <p class="experience-role">Data Product Manager</p>
-                <p class="experience-meta">Apr. 2022 – Sep. 2023 · Paris</p>
-              </div>
-            </div>
-            <p class="paragraph">
-              Pilotage de fonctionnalités data pour un SaaS de gestion de données clients utilisé par KFC, A.P.C., Virgin…
-            </p>
-            <ul class="bullet-list">
-              <li>Librairie de scores SQL, dashboards BI, audience builder enrichi par l’IA.</li>
-              <li>Définition des architectures de données clients, gestion des bases et accompagnement des onboardings.</li>
-            </ul>
-          </article>
-
-          <!-- Alten -->
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h4 class="experience-title">Alten (consultant pour Stellantis)</h4>
-                <p class="experience-role">Project Manager</p>
-                <p class="experience-meta">Aug. 2021 – Feb. 2022 · Madrid</p>
-              </div>
-            </div>
-            <p class="paragraph">
-              Gestion de projets industriels au sein de l’usine Stellantis de Madrid : indicateurs, rituels, démarches Lean.
-            </p>
-          </article>
-        </div>
-
-        <!-- Colonne droite : enseignement + études -->
-        <div class="cv-column">
-          <h3 class="section-subtitle">Expériences d’enseignement</h3>
-
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h4 class="experience-title">Mister IA</h4>
-                <p class="experience-role">Formateur en intelligence artificielle</p>
-                <p class="experience-meta">2024 – 2025</p>
-              </div>
-            </div>
-            <p class="paragraph">
-              Formations IA générative pour des équipes Produit, Ops, Marketing, Finance, RH afin d’intégrer l’IA dans leurs workflows.
-            </p>
-          </article>
-
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h4 class="experience-title">Regen School</h4>
-                <p class="experience-role">Enseignant – adaptation des entreprises au changement climatique</p>
-                <p class="experience-meta">2024 – 2025</p>
-              </div>
-            </div>
-            <p class="paragraph">
-              Cours de niveau Master sur l’intégration des risques climatiques dans la stratégie et les décisions d’investissement.
-            </p>
-          </article>
-
-          <h3 class="section-subtitle">Études supérieures</h3>
-
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h4 class="experience-title">École Polytechnique &amp; HEC Paris</h4>
-                <p class="experience-role">MSc Data Science for Business</p>
-                <p class="experience-meta">2021 – 2023 · Paris</p>
-              </div>
-            </div>
-            <p class="paragraph">
-              Programme commun classé #3 mondial et #1 en Europe (QS Business Analytics 2023), à la croisée du machine learning,
-              des statistiques et du business.
-            </p>
-          </article>
-
-          <article class="experience-card">
-            <div class="experience-header">
-              <div>
-                <h4 class="experience-title">Arts et Métiers</h4>
-                <p class="experience-role">Diplôme d’ingénieur (option IA)</p>
-                <p class="experience-meta">2018 – 2021 · Lille</p>
-              </div>
-            </div>
-            <p class="paragraph">
-              Parcours en physique, informatique, mathématiques, développement business et gestion des risques,
-              avec des projets en deep learning et NLP.
-            </p>
-          </article>
-
-          <h3 class="section-subtitle">Me contacter</h3>
-          <article class="experience-card">
-            <p class="paragraph">
-              Ouvert aux rôles de Product Manager IA, missions freelance Produit × GenAI
-              et collaborations sur les agents IA en entreprise.
-            </p>
-            <p class="paragraph">
-              <strong>Email :</strong> <a href="mailto:mathaguen@gmail.com">mathaguen@gmail.com</a><br>
-              <strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/matthieu-haguenauer/" target="_blank" rel="noreferrer">matthieu-haguenauer</a>
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SECTION TALKS ===== -->
-    <section id="talks" class="section section-talks">
-      <h2 class="section-title section-title-center">Talks</h2>
-      <p class="cv-intro">
-        Interventions pour partager des retours d’expérience sur les produits IA, les agents GenAI
-        et l’adoption de l’IA en entreprise.
-      </p>
-
-      <h3 class="section-subtitle section-subtitle-center">
-        Types d’interventions que je réalise
-      </h3>
-
-      <div class="talks-grid">
-        <div class="talks-card">
-          <ul class="bullet-list">
-            <li>
-              <strong>Conférences &amp; tables rondes</strong> : enjeux GenAI, limites réelles des agents,
-              risques et cas d’usage concrets.
-            </li>
-            <li>
-              <strong>Ateliers exécutifs</strong> : acculturation IA, priorisation de cas d’usage,
-              réflexion sur la gouvernance et l’adoption.
-            </li>
-            <li>
-              <strong>Retours d’expérience &amp; meetups</strong> : comment construire, lancer et évaluer
-              des produits IA dans des contextes réels.
-            </li>
-          </ul>
-          <p class="paragraph">
-            Exemple : intervention au Google AI Camp – “Generative AI Agents for Businesses: Challenges and Limitations”.
+          <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/matthieu-haguenauer/" target="_blank" rel="noreferrer"
+              >linkedin.com/in/matthieu-haguenauer/</a
+            >
+          </p>
+          <p>
+            CV:
+            <a href="assets/Matthieu-Haguenauer-CV.pdf" target="_blank">Download PDF</a>
           </p>
         </div>
       </div>
     </section>
+  </main>
 
-  </div>
-</main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Matthieu Haguenauer</span>
+      <span>GenAI Product Management &amp; Deployment</span>
+    </div>
+  </footer>
 
-<footer class="site-footer">
-  <p>© <span id="year"></span> · Matthieu Haguenauer · Produit × GenAI</p>
-</footer>
+  <script src="script.js"></script>
 </body>
 </html>
