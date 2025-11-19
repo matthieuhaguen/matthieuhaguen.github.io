@@ -1,17 +1,17 @@
-// Set dynamic year in footer
 document.addEventListener("DOMContentLoaded", () => {
+  // Année dynamique
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // Highlight nav link on scroll (like a simple table of contents)
-  const sectionIds = ["about", "experience", "talks", "training", "skills", "contact"];
-  const navLinks = document.querySelectorAll(".nav-links a");
+  // Surbrillance du menu selon la section
+  const sections = ["home", "cv", "talks"];
+  const navLinks = document.querySelectorAll(".top-nav-links a");
 
   function onScroll() {
-    let current = "about";
-    sectionIds.forEach(id => {
+    let current = "home";
+    sections.forEach((id) => {
       const el = document.getElementById(id);
       if (!el) return;
       const rect = el.getBoundingClientRect();
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
       const href = link.getAttribute("href");
       if (href === "#" + current) {
         link.classList.add("active");
