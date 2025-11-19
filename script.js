@@ -1,29 +1,59 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const yearSpan = document.getElementById("year");
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-  }
+// Smooth scroll for nav links
+document.querySelectorAll('.nav a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute("href").slice(1);
+    const target = document.getElementById(targetId);
+    if (!target) return;
+    const offset = 70; // header height approx
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: "smooth" });
 
-  const sections = ["home", "cv", "talks"];
-  const navLinks = document.querySelectorAll(".top-nav-links a");
-
-  function onScroll() {
-    let current = "home";
-    sections.forEach((id) => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      if (rect.top <= 140 && rect.bottom >= 140) current = id;
-    });
-
-    navLinks.forEach((link) => {
-      if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", onScroll);
+    // close mobile nav if open
+    nav.classList.remove("open");
+  });
 });
+
+// Mobile nav toggle
+const navToggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".nav");
+
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+}
+
+// Active nav link on scroll
+const sections = document.querySelectorAll("main section[id]");
+const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+
+function updateActiveNav() {
+  const scrollPos = window.scrollY + 90; // offset for header
+  let activeId = null;
+
+  sections.forEach((section) => {
+    const top = section.offsetTop;
+    const bottom = top + section.offsetHeight;
+    if (scrollPos >= top && scrollPos < bottom) {
+      activeId = section.id;
+    }
+  });
+
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === `#${activeId}`) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", updateActiveNav);
+window.addEventListener("load", updateActiveNav);
+
+// Footer year
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
