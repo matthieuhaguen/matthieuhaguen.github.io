@@ -555,6 +555,21 @@ body {
   font-size: 0.9rem;
 }
 
+.talk-illustration {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+}
+
+.talk-illustration img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
 /* Contact */
 
 .contact-card {
