@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Année dynamique
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // Surbrillance du menu selon la section
   const sections = ["home", "cv", "talks"];
   const navLinks = document.querySelectorAll(".top-nav-links a");
 
@@ -15,14 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const el = document.getElementById(id);
       if (!el) return;
       const rect = el.getBoundingClientRect();
-      if (rect.top <= 120 && rect.bottom >= 120) {
-        current = id;
-      }
+      if (rect.top <= 140 && rect.bottom >= 140) current = id;
     });
 
     navLinks.forEach((link) => {
-      const href = link.getAttribute("href");
-      if (href === "#" + current) {
+      if (link.getAttribute("href") === "#" + current) {
         link.classList.add("active");
       } else {
         link.classList.remove("active");
