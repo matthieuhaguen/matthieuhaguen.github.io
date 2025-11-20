@@ -515,11 +515,6 @@ body {
 
 /* Talks & Awards */
 
-.two-column-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 2.2rem;
-}
 
 .timeline {
   list-style: none;
@@ -556,12 +551,12 @@ body {
 }
 
 .talk-illustration {
-  margin-top: 1rem;
   padding: 0.7rem;
   background: var(--card);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-subtle);
-  max-width: 420px;
+  max-width: 100%;
+  margin: 0;
   margin-left: auto;
 }
 
@@ -572,23 +567,6 @@ body {
   border-radius: var(--radius-lg);
 }
 
-.awards-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-  gap: 2rem;
-  align-items: start;
-  margin-top: 0.5rem;
-}
-
-.awards-two-col {
-  margin-top: 3rem;
-}
-
-.awards-illustration {
-  max-width: 600px;
-  margin-left: auto;
-}
-
 .talks-awards-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.1fr);
@@ -596,18 +574,12 @@ body {
   align-items: start;
 }
 
-/* Sur mobile : une colonne */
 @media (max-width: 880px) {
   .talks-awards-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 }
 
-@media (max-width: 880px) {
-  .awards-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
 
 /* Contact */
 
