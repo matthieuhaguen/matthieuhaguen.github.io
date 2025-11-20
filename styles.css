@@ -572,6 +572,20 @@ body {
   border-radius: var(--radius-lg);
 }
 
+.awards-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 880px) {
+  .awards-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* Contact */
 
 .contact-card {
