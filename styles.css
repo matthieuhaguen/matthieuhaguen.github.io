@@ -580,6 +580,15 @@ body {
   margin-top: 0.5rem;
 }
 
+.awards-two-col {
+  margin-top: 3rem;
+}
+
+.awards-illustration {
+  max-width: 600px;
+  margin-left: auto;
+}
+
 @media (max-width: 880px) {
   .awards-layout {
     grid-template-columns: minmax(0, 1fr);
