@@ -589,6 +589,20 @@ body {
   margin-left: auto;
 }
 
+.talks-awards-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Sur mobile : une colonne */
+@media (max-width: 880px) {
+  .talks-awards-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 880px) {
   .awards-layout {
     grid-template-columns: minmax(0, 1fr);
